@@ -1,0 +1,43 @@
+<div class="wrapper">
+    <div class="main">
+        <div class="container">
+            <div class="header-margin"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tim-title text-center">
+                        <h2>Transaction History</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-display">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Transaction Id</th>
+                                <th>Transferred From</th>
+                                <th>Transferred To</th>
+                                <th>Transferred Amount</th>
+                                <th>Date</th>
+                            </tr>
+                            </thead>
+                            <tbody *ngFor="let transaction of transactions; index as i ">
+                            <tr>
+                                <td>{{i+1}}</td>
+                                <td>{{transaction.id}}</td>
+                                <td>{{transaction.transferFrom}}</td>
+                                <td>{{transaction.transferTo}}</td>
+                                <td>{{transaction.amount}}</td>
+                                <td>{{formatDate(transaction.date)}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,88 @@
+<div class="wrapper">
+    <div class="page-header" style="background-image: url('./assets/img/login-image.jpg');">
+        <div class="filter"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-6 mr-auto ml-auto">
+                    <div class="card card-register">
+                        <h3 class="title">Register Yourself</h3>
+                        <div class="social-line text-center">
+                            <p>Enter User Details</p>
+                        </div>
+                        <form class="login-form" id="login-form" [formGroup]="registerForm" (ngSubmit)="submitForm()">
+                            <div class="row">
+                                <div class="col-md-6 col-sd-12">
+                                    <label>Name</label>
+                                    <div class="input-group form-group-no-border">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="nc-icon nc-single-02"></i>
+                                            </span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Name" id="name" name="name"
+                                               formControlName="name">
+<!--                                        <label *ngIf="u.name.errors && !formValid" class="alert-danger px-2">-->
+<!--                                            Please Enter Name-->
+<!--                                        </label>-->
+                                    </div>
+                                    <label>Email</label>
+                                    <div class="input-group form-group-no-border">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="nc-icon nc-email-85"></i>
+                                            </span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Email" id="email"
+                                               name="email" formControlName="email" [pattern]="emailPattern">
+                                    </div>
+                                    <label>Contact No.</label>
+                                    <div class="input-group form-group-no-border">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="fa fa-phone"></i>
+                                            </span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Contact No."
+                                               id="contactNo" name="contactNo" formControlName="contactNo"
+                                               [pattern]="contactNoPattern">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sd-12">
+                                    <label>PIN</label>
+                                    <div class="input-group form-group-no-border">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="nc-icon nc-key-25"></i>
+                                            </span>
+                                        </div>
+                                        <input type="password" class="form-control" placeholder="PIN" id="pin"
+                                               name="pin" formControlName="pin" [pattern]="pinPattern">
+                                    </div>
+                                    <label>Date Of Birth</label>
+                                        <div class="input-group date">
+                                            <div class="input-group-append">
+                                              <span class="glyphicon glyphicon-calendar input-group-text">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                              </span>
+                                            </div>
+                                            <input class="form-control" placeholder="yyyy-mm-dd"
+                                                   name="dob" ngbDatepicker #d="ngbDatepicker"
+                                                   (click)="d.toggle()" id="dob"
+                                                   formControlName="dob"
+                                            />
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ml-auto mr-auto">
+                                <button class="btn btn-round btn-danger btn-block" type="submit" [disabled]="!registerForm.valid">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer register-footer text-center">
+                <h6> made with <i class="fa fa-heart heart"></i> by Abhay Katharotiya</h6>
+            </div>
+        </div>
+    </div>
+</div>

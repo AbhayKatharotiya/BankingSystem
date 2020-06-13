@@ -1,0 +1,73 @@
+<div class="wrapper">
+    <div class="main">
+        <div class="container">
+            <div class="header-margin"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tim-title text-center">
+                        <h2>Profile</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <form id="userForm" name="userForm">
+                    <div class="col-md-12 row-display form-group">
+                        <div class="col-md-2">
+                            <label class="form-check-label">Name </label><span class="pull-right">:</span>
+                        </div>
+                        <div class="col-md-10">
+                            <input class="form-control" type="text" id="name" placeholder="Name"
+                                   [(ngModel)]="name" name="name">
+                        </div>
+                    </div>
+                    <div class="col-md-12 row-display form-group">
+                        <div class="col-md-2">
+                            <label class="form-check-label">Email </label><span class="pull-right">:</span>
+                        </div>
+                        <div class="col-md-10">
+                            <input class="form-control" type="email" id="email" placeholder="Email" [(ngModel)]="email" name="email">
+                        </div>
+                    </div>
+                    <div class="col-md-12 row-display form-group">
+                        <div class="col-md-2">
+                            <label class="form-check-label">Contact No. </label><span class="pull-right">:</span>
+                        </div>
+                        <div class="col-md-10">
+                            <input class="form-control bg-light" type="text" id="contactNo" placeholder="Contact No."
+                                   disabled [value]="contactNo">
+                        </div>
+                    </div>
+                    <div class="col-md-12 row-display form-group">
+                        <div class="col-md-2">
+                            <label class="form-check-label">Date Of Birth </label><span class="pull-right">:</span>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="input-group date">
+                                <input class="form-control" placeholder="yyyy-mm-dd"
+                                       name="ngbDate" ngbDatepicker #d="ngbDatepicker"
+                                       (click)="d.toggle()" id="dob" [(ngModel)]="ngbDate"/>
+                                <div class="input-group-append">
+                                              <span class="glyphicon glyphicon-calendar input-group-text">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                              </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 row-display form-group">
+                        <div class="col-md-2">
+                            <label class="form-check-label">Age </label><span class="pull-right">:</span>
+                        </div>
+                        <div class="col-md-10">
+                            <input class="form-control bg-light" type="text" id="age" disabled placeholder="Age" [value]="age">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-8 ml-auto mr-auto">
+                        <button class="btn btn-block btn-danger btn-round" (click)="updateProfile()">Update Profile
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

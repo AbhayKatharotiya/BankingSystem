@@ -1,0 +1,41 @@
+<div class="wrapper">
+    <div class="main">
+        <div class="container">
+            <div class="header-margin"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tim-title text-center">
+                        <h2>Account</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <form id="userForm" name="AccountForm">
+                    <div class="col-md-12 row-display form-group">
+                        <div class="col-md-2">
+                            <label class="form-check-label">Account No. </label><span class="pull-right">:</span>
+                        </div>
+                        <div class="col-md-10">
+                            <input class="form-control bg-light" type="text" id="accountNo" disabled placeholder="Account No." [value]="accountNo">
+                        </div>
+                    </div>
+                    <div class="col-md-12 row-display form-group">
+                        <div class="col-md-2">
+                            <label class="form-check-label">Balance </label><span class="pull-right">:</span>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="input-group">
+                                <input class="form-control bg-light" type="email" id="email" disabled placeholder="Balance" [value]="balance">
+                                <div class="input-group-append">
+                                    <span class="glyphicon glyphicon-calendar input-group-text">
+                                        <i class="fa fa-inr" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

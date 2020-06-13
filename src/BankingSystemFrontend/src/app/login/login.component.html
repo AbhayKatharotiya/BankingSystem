@@ -1,0 +1,44 @@
+<div class="wrapper">
+    <div class="page-header" style="background-image: url('./assets/img/login-image.jpg');">
+        <div class="filter"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mr-auto ml-auto">
+                    <div class="card card-register">
+                        <h3 class="title">Welcome</h3>
+                        <div class="social-line text-center">
+                            <p>Enter Your Login Details</p>
+                        </div>
+                        <form [formGroup]="loginForm" (ngSubmit)="login()">
+                            <label>Contact No.</label>
+                            <div class="input-group form-group-no-border">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">
+                                      <i class="fa fa-phone"></i>
+                                  </span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Contact No." id="contactNo"
+                                       formControlName="contactNo">
+                            </div>
+
+                            <label>PIN</label>
+                            <div class="input-group form-group-no-border">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">
+                                      <i class="nc-icon nc-key-25"></i>
+                                  </span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="PIN" id="pin"
+                                       formControlName="pin">
+                            </div>
+                            <button class="btn btn-danger btn-block btn-round" type="submit" [disabled]="!loginForm.valid">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer register-footer text-center">
+                <h6> made with <i class="fa fa-heart heart"></i> by Abhay Katharotiya</h6>
+            </div>
+        </div>
+    </div>
+</div>

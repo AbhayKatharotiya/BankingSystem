@@ -1,0 +1,44 @@
+<div class="wrapper">
+    <div class="main">
+        <div class="container">
+            <div class="header-margin"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tim-title text-center">
+                        <h2>Transfer Money</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <form id="userForm" name="AccountForm" [formGroup]="transferMoneyForm" (ngSubmit)="transferMoneyFormSubmit()">
+                    <div class="col-md-12 row-display form-group">
+                        <div class="col-md-2">
+                            <label class="form-check-label">Account No. </label><span class="pull-right">:</span>
+                        </div>
+                        <div class="col-md-10">
+                            <input class="form-control" type="text" id="transferTo" placeholder="Receiver's account no." formControlName="transferTo" name="transferTo">
+                        </div>
+                    </div>
+                    <div class="col-md-12 row-display form-group">
+                        <div class="col-md-2">
+                            <label class="form-check-label">Amount </label><span class="pull-right">:</span>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="input-group">
+                                <input class="form-control" type="email" id="email" placeholder="Ammount to be transfer" formControlName="amount" name="amount">
+                                <div class="input-group-append">
+                                    <span class="glyphicon glyphicon-calendar input-group-text">
+                                        <i class="fa fa-inr" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-8 ml-auto mr-auto">
+                        <button class="btn btn-round btn-danger btn-block" type="submit" [disabled]="!transferMoneyForm.valid">Transfer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

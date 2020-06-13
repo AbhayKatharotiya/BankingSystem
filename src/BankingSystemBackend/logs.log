@@ -1,0 +1,43 @@
+[INFO ] 2020-06-09 19:46:43.789 [main] BackendApplication - Starting BackendApplication on DESKTOP-JHQ9S5Q with PID 16864 (E:\Abhay projects\BankingSystemBackend\target\classes started by Abhay in E:\Abhay projects\BankingSystemBackend)
+[INFO ] 2020-06-09 19:46:43.798 [main] BackendApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-06-09 19:46:45.420 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[INFO ] 2020-06-09 19:46:45.528 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 100ms. Found 2 MongoDB repository interfaces.
+[INFO ] 2020-06-09 19:46:46.119 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-06-09 19:46:46.140 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-06-09 19:46:46.140 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2020-06-09 19:46:46.141 [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+[INFO ] 2020-06-09 19:46:46.279 [main] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-06-09 19:46:46.279 [main] ContextLoader - Root WebApplicationContext: initialization completed in 2404 ms
+[INFO ] 2020-06-09 19:46:46.454 [main] cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[WARN ] 2020-06-09 19:46:46.591 [main] CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+[WARN ] 2020-06-09 19:46:46.670 [main] CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+[INFO ] 2020-06-09 19:46:47.082 [main] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-06-09 19:46:47.226 [main] UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: cb49b2ee-07ca-473c-a2b5-3f664efa6106
+
+[INFO ] 2020-06-09 19:46:47.335 [main] DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7be1ce6a, org.springframework.security.web.context.SecurityContextPersistenceFilter@23a918c7, org.springframework.security.web.header.HeaderWriterFilter@63d5874f, org.springframework.security.web.csrf.CsrfFilter@37baddde, org.springframework.security.web.authentication.logout.LogoutFilter@56b859a6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e236278, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3a8d467e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3119cf6f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6848a051, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4483d35, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59fbb34, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6dc9da2d, org.springframework.security.web.session.SessionManagementFilter@5984feef, org.springframework.security.web.access.ExceptionTranslationFilter@4a8e6e89, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4f327096]
+[INFO ] 2020-06-09 19:46:47.357 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[WARN ] 2020-06-09 19:46:47.370 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+[INFO ] 2020-06-09 19:46:47.371 [main] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-06-09 19:46:47.374 [main] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-06-09 19:46:47.374 [main] StandardService - Stopping service [Tomcat]
+[INFO ] 2020-06-09 19:46:47.378 [main] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-06-09 19:46:47.379 [main] Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-06-09 19:46:47.384 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2020-06-09 19:46:47.390 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
