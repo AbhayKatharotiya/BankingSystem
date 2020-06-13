@@ -66,3 +66,32 @@ The app defines following APIs.
 ```bash
     http://localhost:4200/
 ```
+# Application Screenshots
+
+### Login
+
+![Login image](https://github.com/AbhayKatharotiya/BankingSystem/blob/master/readme-images/login.PNG?raw=true)
+
+### Register
+
+![Register image](https://github.com/AbhayKatharotiya/BankingSystem/blob/master/readme-images/register%20new.PNG?raw=true)
+
+### Home
+
+![Home Page image](https://github.com/AbhayKatharotiya/BankingSystem/blob/master/readme-images/home.PNG?raw=true)
+
+### Profile
+
+![Profile image](https://github.com/AbhayKatharotiya/BankingSystem/blob/master/readme-images/profile.PNG?raw=true)
+
+### Transaction History
+
+![History image](https://github.com/AbhayKatharotiya/BankingSystem/blob/master/readme-images/history.PNG?raw=true)
+
+### Transfer
+
+![Transfer image](https://github.com/AbhayKatharotiya/BankingSystem/blob/master/readme-images/transfer.PNG?raw=true)
+
+
+# Future Extension
+If a further chance is given to take the project ahead, then with the considerable knowledge in Angular and Spring Boot, I would be happy to invest my skills to build a creative and helpful solution for the society.
